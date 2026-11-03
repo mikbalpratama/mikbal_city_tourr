@@ -11,7 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'City Tour',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+        ),
+      ),
       home: const HomeScreen(),
     );
   }
@@ -43,14 +49,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 12.0),
               const Text(
-                "Explore the charm of our city's hidden gems and embark on a "
-                    'journey to discover the rich cultural heritage, breathtaking '
-                    'landscapes, and unique experiences that await you. From '
-                    'historic landmarks to vibrant markets and seren natural '
-                    'wonder tour city offers a tapestry of experiences that will '
-                    'captivate your senses. Join us in exploring the beauty of '
-                    "our city and create memories that will last a lifetime. Come "
-                    "and visit our city's treasures",
+                "Explore the charm of our city's hidden gems and embark on a journey to discover the rich cultural heritage, breathtaking landscapes, and unique experiences that await you. From historic landmarks to vibrant markets and seren natural wonders, our city offers a tapestry of experiences that will captivate your senses. Join us in exploring the beauty of our city and create memories that will last a lifetime. Come and visit our city's treasures.",
               ),
               const SizedBox(height: 16.0),
               SingleChildScrollView(
