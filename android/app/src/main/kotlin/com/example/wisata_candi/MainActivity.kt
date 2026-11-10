@@ -1,4 +1,4 @@
-package com.example.mhafizhmuhyiddin_city_tour
+package com.example.wisata_candi
 
 import io.flutter.embedding.android.FlutterActivity
 
